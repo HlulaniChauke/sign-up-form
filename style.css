@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 0.5rem + 2vh
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 80vh;
+    margin: 5% 0 5% 0;
+    background-color: white;
+}
+
+.sidebar{
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(norse/Norsebold.otf);
+}
+
+.logo{
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20vh;
+    position:relative;
+
+}
+
+.logo>img{
+    margin-left: 20vw;
+}
+
+.logo>p{
+    font-family: Norse-Bold;
+    font-size: 5vw;
+    margin-right: 10vw;
+}
+.main{
+   
+    display: grid;
+    margin-right: 2rem;
+       
+}
+.theForm{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.header{
+    padding-top: 10vh;
+    padding-left: 5vh;
+}
+
+.body{
+    box-shadow: 5px 5px 10px grey ;
+    padding-left: 5vh;
+}
+.right>:nth-child(2n+1){
+    padding-top: 1rem 
+}
+.left>:nth-child(2n+1){
+    padding-top: 1rem 
+}
+
+.footer{
+    padding-left: 5vh;
+    
+}
+
+.pwd{
+    border: 0.05rem solid red; 
+}
+
+input:invalid + .error{
+    display: block;
+    border: solid red;
+}
+
+input:valid + .error{
+    display: none;
+    border: solid blue;
+}
+.error{
+    color: red;
+    display: block;
+}
+input:focus{
+    border: blue;
+}
+
+button{
+    background-color: #596D48;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+}
